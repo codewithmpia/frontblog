@@ -35,13 +35,10 @@
 
 <script setup>
     import { ref } from 'vue';
-    import { useRouter } from 'vue-router';
     import Logo from './icons/Logo.vue';
     import Menu from './icons/Menu.vue';
     import Close from './icons/Close.vue';
     
-
-    const route = useRouter();
     const isOpen = ref(false);
 
     const toggleMobileMenu = () => {
