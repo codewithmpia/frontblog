@@ -128,7 +128,7 @@ const submitForm = async () => {
         } else {
             // Mettre à jour les commentaires après une soumission réussie
             isShow.value = true;
-            text.value = "Une erreur s'est produite";
+            text.value = "Une erreur s'est produite.";
         }
     } catch (error) {
         console.log(error);
