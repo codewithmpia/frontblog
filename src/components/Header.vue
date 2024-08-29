@@ -39,7 +39,7 @@
     import Logo from './icons/Logo.vue';
     import Menu from './icons/Menu.vue';
     import Close from './icons/Close.vue';
-import { is } from 'date-fns/locale';
+    
 
     const route = useRouter();
     const isOpen = ref(false);

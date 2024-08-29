@@ -124,8 +124,9 @@ const submitForm = async () => {
             text.value = response.data.message;
             isShow.value = true;
             resetForm();
-            await postStore.fetchPost(route.params.slug);  // Mettre à jour les commentaires après une soumission réussie
+            await postStore.fetchPost(route.params.slug);  
         } else {
+            // Mettre à jour les commentaires après une soumission réussie
             isShow.value = true;
             text.value = "Une erreur s'est produite";
         }

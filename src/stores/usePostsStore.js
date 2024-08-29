@@ -23,7 +23,7 @@ export const usePostsStore = defineStore('posts', {
         async fetchPost(slug) {
             this.isLoading = true;
             try {
-                const response = await axios.get(`http://127.0.0.1:5000/api/posts/${slug}`);
+                const response = await axios.get(`https://mpiadev.pythonanywhere.com/api/posts/${slug}`);
                 if (response.status === 201) {
                     this.post = response.data;
                     this.updatePostViews(slug, response.data.views);
